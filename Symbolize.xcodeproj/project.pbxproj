@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2226392491D8E4006039E9 /* TerminalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2226382491D8E4006039E9 /* TerminalService.swift */; };
 		4B414D0F24912C2600AF6E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B414D0E24912C2600AF6E9D /* AppDelegate.swift */; };
 		4B414D1124912C2600AF6E9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B414D1024912C2600AF6E9D /* ViewController.swift */; };
 		4B414D1324912C2C00AF6E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B414D1224912C2C00AF6E9D /* Assets.xcassets */; };
 		4B414D1624912C2C00AF6E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B414D1424912C2C00AF6E9D /* Main.storyboard */; };
+		4BF1129524927AEA0034FE9A /* AtosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1129424927AEA0034FE9A /* AtosService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B2226382491D8E4006039E9 /* TerminalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalService.swift; sourceTree = "<group>"; };
 		4B414D0B24912C2600AF6E9D /* Symbolize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Symbolize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B414D0E24912C2600AF6E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B414D1024912C2600AF6E9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		4B414D1524912C2C00AF6E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B414D1724912C2C00AF6E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B414D1824912C2C00AF6E9D /* Symbolize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Symbolize.entitlements; sourceTree = "<group>"; };
+		4BF1129424927AEA0034FE9A /* AtosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtosService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B2226342491D89F006039E9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B414D1024912C2600AF6E9D /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4B2226352491D8B6006039E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B414D1424912C2C00AF6E9D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B2226362491D8BB006039E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B2226372491D8C1006039E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4B2226382491D8E4006039E9 /* TerminalService.swift */,
+				4BF1129424927AEA0034FE9A /* AtosService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4B414D0224912C2600AF6E9D = {
 			isa = PBXGroup;
 			children = (
@@ -53,10 +89,12 @@
 		4B414D0D24912C2600AF6E9D /* Symbolize */ = {
 			isa = PBXGroup;
 			children = (
+				4B2226372491D8C1006039E9 /* Services */,
+				4B2226362491D8BB006039E9 /* Model */,
+				4B2226352491D8B6006039E9 /* View */,
+				4B2226342491D89F006039E9 /* ViewController */,
 				4B414D0E24912C2600AF6E9D /* AppDelegate.swift */,
-				4B414D1024912C2600AF6E9D /* ViewController.swift */,
 				4B414D1224912C2C00AF6E9D /* Assets.xcassets */,
-				4B414D1424912C2C00AF6E9D /* Main.storyboard */,
 				4B414D1724912C2C00AF6E9D /* Info.plist */,
 				4B414D1824912C2C00AF6E9D /* Symbolize.entitlements */,
 			);
@@ -133,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF1129524927AEA0034FE9A /* AtosService.swift in Sources */,
 				4B414D1124912C2600AF6E9D /* ViewController.swift in Sources */,
 				4B414D0F24912C2600AF6E9D /* AppDelegate.swift in Sources */,
+				4B2226392491D8E4006039E9 /* TerminalService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
